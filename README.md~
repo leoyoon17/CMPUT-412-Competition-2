@@ -35,28 +35,6 @@ On the fifth terminal:
 * Finally, press the 'X' button on the logitech controller to start or stop the program!
 
 
-To run the evasion program, again, open 5 terminals (or tmux windows, etc):
-=======================================================================
-
-On the first terminal:
-* $ roscore
-
-On the second terminal:
-* $ roslaunch turtlebot_bringup minimal.launch
-
-On the third terminal:
-* $ roslaunch turtlebot_bringup 3dsensor.launch
-
-On the fourth terminal:
-* $ roslaunch turtlebot_teleop logitech.launch
-
-On the fifth terminal:
-* change directory to /Competition 1/CMPUT-412-Competition-1/src/evadebot
-* $ ./wander.py cmd_vel:=cmd_vel_mux/input/teleop
-
-* Finally, press the 'X' button on the logitech controller to start or stop the program!
-
-
 
 
 
