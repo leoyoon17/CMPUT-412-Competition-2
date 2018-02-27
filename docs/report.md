@@ -45,7 +45,7 @@ The only node that was used in the program to run the robot was
 Method
 ======
 
- The initial concept of utilizing OpenCV's library to track one line was taken from the text Programming Robots with Ros. To track both the lanes, two masks were used to detect the left and right lanes separately. The threshold in which the robot sees a lane as 'white' can be adjusted via manipulating the ```python self.threshold ``` value.
+ The initial concept of utilizing OpenCV's library to track one line was taken from the text Programming Robots with Ros. To track both the lanes, two masks were used to detect the left and right lanes separately. The threshold in which the robot sees a lane as 'white' can be adjusted via manipulating the ``` self.threshold ``` value.
 
 ```python
 search_top = 3*h/5 - 30
@@ -71,25 +71,29 @@ mask2[0:h, search_right_mask2:w] = 0
 mask2[0:h, 0:search_left_mask2] = 0	
 ```
 
- The robot's movement was based on its position between the lanes. After calculating the midpoint between the two lanes, the robot can adjust itself accordingly based on the ```python self.err ``` value.
+ The robot's movement was based on its position between the lanes. After calculating the midpoint between the two lanes, the robot can adjust itself accordingly based on the ``` self.err ``` value.
 
- The angular.z velocity and linear.x velocity both depend on ```python self.dampening ``` which which is based off an adujstable ```python self.compensation ``` value, as well as the turning angle of the corner.
+ The angular.z velocity and linear.x velocity both depend on ``` self.dampening ``` which which is based off an adujstable ``` self.compensation ``` value, as well as the turning angle of the corner.
  As the corner becomes sharper, the speed is lowered to compensate, as well as increasing the turning rate.
 
  The turning angle was based on pythagorian principles.
+![Pythagoras](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/pythagoras.gif)
+
 
 Results
 ========
 
  Fortunately, the robot performed well during the competition. Our first place victory was thanks to the good racing line while tackling corners. The robot would stick to the inside line of the corner to shave as much time as possible (this was a consequence of turning in via turning angle).
 
-We can see the results of the final race ![here]()
+We can see the results of the final race ![here](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/race.mp4)
 
 Discussion
 ==========
 Easily, the most difficult problem to address with this competition was how to deal with sharp corners, as the camera would lose track of one of the lanes coming to close to the inside lane. This problem was alleviated by introducing realizing that the loss of a lane was inevitable during a sharp turn, thus we must compensate more heavily during said turn until we find two lanes again.
 
 Another problem whilst tackling this competition was how to navigate throughout the course efficiently so that we can shave as much time as possible - as all the robots had the same top speed. The solution to the problem was to take concepts from motorsports into perspective, and utilize it in our final product. by sticking to the inside lane during relatively sharp turns (the apex of the turn), we can reduce unnecesary distance traveled.
+
+![Corners](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/corner.jpg)
 
 Conclusions
 ===========
