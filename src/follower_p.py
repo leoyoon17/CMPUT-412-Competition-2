@@ -35,7 +35,7 @@ class Follower:
 		# self.joy_sub = rospy.Subscriber('joy', Joy, self.sleep_switch)
 		# self.cmd_vel_with_dead_bot_switch = rospy.Subscriber('cmd_vel_safe', Twist, self.got_twist)
 		self.twist = Twist()
-		self.threshold = 70
+		self.threshold = 70 # Increase value in more brightly lit rooms, decrease in darker rooms.
 		self.sleep_bot = True
 		self.prev_err = 0
 		self.prev_time = 0
