@@ -1,6 +1,6 @@
 ## CMPUT 412 Winter 2018 Competition 2: Run, Robot Run, By Jae-yeon (Leo) Yoon and Sumeyye Aydin ##
 
-The competition report can be found ![here](https://github.com/leoyoon17/CMPUT-412-Competition-1/blob/master/docs/report.md)!
+The competition report can be found ![here](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/report.md)!
 
 To download the necessary files:
 ```

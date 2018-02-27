@@ -12,6 +12,8 @@ Asus Xtion Pro Live, and the logitech controller to your computer! (or ssh)
 
 Note: This program does not have a launch file as Leo's computer was unable to create a workspace package with "catkin_make", thus launchfiles would not run properly.
 
+Note: The camera must be placed relatively high on the robot and pointed at a downward angle for the program to run properly (which can be seen in the competition video listed on the competition report).
+
 To run the program, first open 5 terminals (or tmux windows, etc):
 ===========================================================================
 
