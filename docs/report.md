@@ -71,10 +71,18 @@ mask2[0:h, search_right_mask2:w] = 0
 mask2[0:h, 0:search_left_mask2] = 0	
 ```
 
+ During relatively straight sections of the course, both masks pick up the lanes, which can be seen in the image below:
+![Straight](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/straight.png)
+
  The robot's movement was based on its position between the lanes. After calculating the midpoint between the two lanes, the robot can adjust itself accordingly based on the ``` self.err ``` value.
 
  The angular.z velocity and linear.x velocity both depend on ``` self.dampening ``` which which is based off an adujstable ``` self.compensation ``` value, as well as the turning angle of the corner.
  As the corner becomes sharper, the speed is lowered to compensate, as well as increasing the turning rate.
+
+ Below are two examples where the turning angle is too steep to maintain vision on both lanes, thus some compensations had to be made:
+![sharp_turn_1](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/sharp_turn.png)
+
+![sharp_turn_2](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/sharp_turn.png)
 
  The turning angle was based on pythagorian principles.
 ![Pythagoras](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/pythagoras.gif)

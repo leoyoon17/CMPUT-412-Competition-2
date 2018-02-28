@@ -93,6 +93,8 @@ Easily, the most difficult problem to address with this competition was how to d
 
 Another problem whilst tackling this competition was how to navigate throughout the course efficiently so that we can shave as much time as possible - as all the robots had the same top speed. The solution to the problem was to take concepts from motorsports into perspective, and utilize it in our final product. by sticking to the inside lane during relatively sharp turns (the apex of the turn), we can reduce unnecesary distance traveled.
 
+![Corners](https://github.com/leoyoon17/CMPUT-412-Competition-2/blob/master/docs/corner.jpg)
+
 Conclusions
 ===========
 Ultimately, our goal was to furthe understance OpenCV and applying it to robotics with the given sensors. From the results for the competition, we can come to terms with our performance, but as always, there is room for improvement. Our robot sucessfully ran the given course in a timely manner, thus the algorithm was functional to some extent.
